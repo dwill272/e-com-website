@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShopX - Premium E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-5 flex justify-between items-center">
+            <a href="/" class="text-3xl font-bold">ShopX</a>
+            <nav>
+                <ul class="flex space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-yellow-500">Home</a></li>
+                    <li><a href="shop.html" class="hover:text-yellow-500">Shop</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-500">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-500">Contact</a></li>
+                    <li><a href="cart.html" class="hover:text-yellow-500">Cart (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen flex flex-col justify-center items-center text-center text-white relative" style="background-image: url('assets/images/hero-banner.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <h2 class="text-5xl font-semibold z-10">Welcome to ShopX</h2>
+        <p class="text-2xl z-10 mt-4">Premium products at unbeatable prices</p>
+        <a href="#shop" class="bg-yellow-500 text-black py-3 px-8 rounded-lg mt-6 z-10 hover:bg-yellow-400">Start Shopping</a>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="container mx-auto py-16">
+        <h2 class="text-4xl font-bold text-center mb-10">Browse Our Categories</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="category-card text-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="assets/images/category-1.jpg" alt="Electronics" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold">Electronics</h3>
+                    <p class="text-gray-500">Phones, Laptops, Cameras & More</p>
+                </div>
+            </div>
+            <div class="category-card text-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="assets/images/category-2.jpg" alt="Fashion" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold">Fashion</h3>
+                    <p class="text-gray-500">Clothing, Shoes, Accessories</p>
+                </div>
+            </div>
+            <div class="category-card text-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="assets/images/category-3.jpg" alt="Home" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold">Home & Furniture</h3>
+                    <p class="text-gray-500">Sofas, Tables, Chairs & More</p>
+                </div>
+            </div>
+            <div class="category-card text-center bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition">
+                <img src="assets/images/category-4.jpg" alt="Beauty" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold">Beauty</h3>
+                    <p class="text-gray-500">Skincare, Makeup, Fragrances</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop" class="container mx-auto py-16">
+        <h2 class="text-4xl font-bold text-center mb-10">Popular Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="product-card bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transition">
+                <img src="assets/images/product-1.jpg" alt="Product 1" class="w-full h-56 object-cover rounded-lg">
+                <h3 class="text-xl font-semibold mt-4">Product 1</h3>
+                <p class="text-gray-500">$99.99</p>
+                <a href="product-detail.html" class="mt-4 bg-yellow-500 text-black py-2 px-6 rounded hover:bg-yellow-400">View Details</a>
+            </div>
+            <div class="product-card bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transition">
+                <img src="assets/images/product-2.jpg" alt="Product 2" class="w-full h-56 object-cover rounded-lg">
+                <h3 class="text-xl font-semibold mt-4">Product 2</h3>
+                <p class="text-gray-500">$89.99</p>
+                <a href="product-detail.html" class="mt-4 bg-yellow-500 text-black py-2 px-6 rounded hover:bg-yellow-400">View Details</a>
+            </div>
+            <!-- More products go here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h3 class="text-xl font-semibold mb-4">ShopX</h3>
+            <p class="text-lg mb-4">Your one-stop shop for everything you need</p>
+            <div class="space-x-6">
+                <a href="#" class="hover:text-yellow-500">Privacy Policy</a>
+                <a href="#" class="hover:text-yellow-500">Terms & Conditions</a>
+                <a href="#" class="hover:text-yellow-500">FAQ</a>
+            </div>
+            <div class="mt-4">
+                <p>&copy; 2025 ShopX - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
